@@ -3,7 +3,7 @@ const express = require("express");
 
 const app = express();
 
-const port =process.env.PORT || 2331
+const port =process.env.PORT || 8800
 app.use(express.json());
 
 // connect with config 
@@ -17,7 +17,7 @@ app.use("/products", productController);
 app.listen(port, async function(req,res){
     try{
 connect()
-console.log("listening port 2331");
+console.log("listening port 8800");
 
     }
     catch(err){
